@@ -13,10 +13,12 @@ class PaintProgram(QWidget):
         self.x = []
         self.y = []
 
-    def mousePressEvent(self, event):
+ 
+    def mouseMoveEvent(self,event):
         self.x.append(event.pos().x())
         self.y.append(event.pos().y())
         self.update()
+
         
     def paintEvent(self,ev):
         p = QPainter()
