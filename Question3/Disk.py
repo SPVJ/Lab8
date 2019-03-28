@@ -14,7 +14,7 @@ class Disk():
         
         color("black")
         seth(0)
-        fd(w/2)
+        fd(self.w/2)
         left(90)
         fd(h)
         left(90)
@@ -22,7 +22,7 @@ class Disk():
         left(90)
         fd(h)
         left(90)
-        fd(w/2)
+        fd(self.w/2)
     
     def newpos(self,x,y):
         self.x = x
