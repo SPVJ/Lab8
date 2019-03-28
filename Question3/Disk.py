@@ -12,7 +12,7 @@ class Disk():
     def showdisk(self):
         pendown()
         
-        color(2,0,0)
+        color("black")
         seth(0)
         fd(w/2)
         left(90)
@@ -32,7 +32,7 @@ class Disk():
     
     def cleardisk():
         pendown()
-        color(255,255,255)
+        color("white")
         seth(0)
         fd(w/2)
         left(90)
