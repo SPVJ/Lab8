@@ -29,6 +29,14 @@ class Pole(object):
         self.stack.append(disk)
         self.toppos += disk.dheight
         self.toppos += 1
+
+    def popdisk(self):
+        d = self.stack.pop()
+        d.cleardisk()
+        self.toppos -= 1
+        self.toppos -= d.dheight
+        return d
+    
     '''
     def __init__(self,name,stack,top_position,x_pos,y_pos,thickness,length,color ):
         self.name = name
