@@ -6,7 +6,7 @@ from A_simple_paint_program import Ui_PaintProgram
 
 class PaintProgram(QMainWindow):
     def __init__(self):
-        super().__init__(self,None)
+        QMainWindow.__init__(self,None)
 
         self.ui = Ui_PaintProgram()
         self.ui.setupUi(self)
@@ -21,7 +21,7 @@ class PaintProgram(QMainWindow):
 
         pencil.drawEllipse(event.pos().x(),event.pos().y(),2,2)
 
-        pencil.show()
+        pencil.end()
 
 
 def main():
