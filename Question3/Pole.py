@@ -1,7 +1,6 @@
 import turtle as turtle
-class Pole(object):
-
-    def init(self,name="",xpos=0,ypos=0,thick=10,length=100):
+class Pole():
+    def __init__(self,name="",xpos=0,ypos=0,thick=10,length=100):
         self.pname = name
         self.stack = []
         self.toppos = 0
