@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'A_simple_paint_program.ui',
 # licensing of 'A_simple_paint_program.ui' applies.
 #
-# Created: Thu Mar 28 13:53:16 2019
+# Created: Thu Mar 28 14:05:55 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -22,11 +22,9 @@ class Ui_PaintProgram(object):
         self.label.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
-        self.frame = QtWidgets.QFrame(PaintProgram)
-        self.frame.setGeometry(QtCore.QRect(10, 10, 341, 221))
-        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame.setObjectName("frame")
+        self.widget = QtWidgets.QWidget(PaintProgram)
+        self.widget.setGeometry(QtCore.QRect(10, 10, 341, 231))
+        self.widget.setObjectName("widget")
 
         self.retranslateUi(PaintProgram)
         QtCore.QMetaObject.connectSlotsByName(PaintProgram)
