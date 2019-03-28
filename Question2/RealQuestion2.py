@@ -10,25 +10,25 @@ class PaintProgram(QWidget):
 
         self.ui = Ui_PaintProgram()
         self.ui.setupUi(self)
-       
-    def mousePressEvent(self, event):
-        print("eee")
+        self.x = []
+        self.y = []
+
+ 
+    def mouseMoveEvent(self,event):
+        self.x.append(event.pos().x())
+        self.y.append(event.pos().y())
+        self.update()
+
+        
+    def paintEvent(self,ev):
         p = QPainter()
         p.begin(self)
 
         p.setPen(QColor(0,0,0))
         p.setBrush(QColor(0,127,0))
-        p.drawPolygon([
-            QPoint(70,100),QPoint(100,110),
-            QPoint(130,100),QPoint(100,150)
-        ])
+        for i in range(len(self.x)):
+            p.drawEllipse(self.x[i],self.y[i],5,5)
 
-        p.setPen(QColor(255,127,0))
-        p.setBrush(QColor(255,127,0))
-        p.drawPie(50,150,100,100,0,180*16)
-        p.drawPolygon(
-            [QPoint(50,200),QPoint(150,200),QPoint(100,400),]
-        )
         p.end()
 
 
