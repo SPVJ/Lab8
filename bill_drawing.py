@@ -15,18 +15,16 @@ class Simple_drawing_window_v3(QWidget):
 
         p.setPen(QColor(0,0,0))
         p.setBrush(QColor(0,127,0))
-        # p.drawPolygon(
-        #     [QPoint(70,100),QPoint(100,110),
-        #     QPoint(130,100),QPoint(100,150)]
-        # )
-
-        p.drawRect(50,120,100,100)
+        p.drawPolygon(
+            [QPoint(70,100),QPoint(100,110),
+            QPoint(130,100),QPoint(100,150)]
+        )
 
 
+        p.setPen(QColor(255,127,0))
+        p.setBrush(QColor(255,127,0))
 
-
-        # p.setPen(QColor(255,127,0))
-        # p.setBrush(QColor(255,127,0))
+        p.drawRect(50,150,100,100)
         # p.drawPie(50,150,100,100,0,180*16)
 
         # p.drawPolygon(
