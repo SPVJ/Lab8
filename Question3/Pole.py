@@ -22,4 +22,5 @@ class Pole():
         self.top_position -= 1
         disk
     def popdisk(self):
+        pass
 
