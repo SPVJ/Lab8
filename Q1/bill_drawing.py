@@ -24,11 +24,7 @@ class Simple_drawing_window_v3(QWidget):
         p.setPen(QColor(255,127,0))
         p.setBrush(QColor(255,127,0))
 
-        p.drawEllipse(0,0,20,20)
-
-        # p.drawRect(50,150,100,100)
-
-        
+        p.drawRect(50,150,100,100)
         # p.drawPie(50,150,100,100,0,180*16)
 
         # p.drawPolygon(
