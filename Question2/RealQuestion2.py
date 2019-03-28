@@ -12,6 +12,12 @@ class PaintProgram(QWidget):
         self.ui.setupUi(self)
         self.x = []
         self.y = []
+        self.ui.bt_clear.clicked.connect(self.clear)
+
+    def clear(self):
+        self.x = []
+        self.y = []
+        self.update()
 
  
     def mouseMoveEvent(self,event):
