@@ -1,4 +1,4 @@
-from turtle import *
+import turtle as turtle
 class Pole(object):
 
     def init(self,name="",xpos=0,ypos=0,thick=10,length=100):
